@@ -1,19 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="1_Assets/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Open+Sans:300,400,600,700&display=swap"
+        rel="stylesheet">
     <title>Day Planner</title>
 </head>
+
 <body>
-    <header>
-        <h1>hi!</h1>
+    <header class="header">
+        <h1>Work Day Scheduler</h1>
+        <h2>A simple calendar app for scheduling your work day.</h2>
+        <h2 id="date">Date</h2>
     </header>
+    <div class="border"></div>
+
+    <!-- calendar -->
+
+    <div class="cal-container">
+
+        
+        <div class="col hour0">
+            <div class="left">
+                <h3>9:00 am</h3>
+            </div>
+            <textarea type="text" id="userInput0" class="middle"></textarea>
+            <button class="right" id="saveButton0" value="0">
+                <p class="complete">save</p>
+            </button>
+        </div>
+        <div class="col hour1">
+            <div class="left">
+                <h3>10:00 am</h3>
+            </div>
+            <textarea type="text" id="userInput1" class="middle"></textarea>
+            <button class="right" id="saveButton1" value="1">
+                <p class="complete">save</p>
+            </button>
+        </div>
+        <div class="col hour2">
+            <div class="left">
+                <h3>11:00 am</h3>
+            </div>
+            <textarea type="text" id="userInput2" class="middle"></textarea>
+            <button class="right" id="saveButton2" value="2">
+                <p class="complete">save</p>
+            </button>
+        </div>
+        <div class="col hour3">
+            <div class="left">
+                <h3>12:00 pm</h3>
+            </div>
+            <textarea type="text" id="userInput3" class="middle"></textarea>
+            <button class="right" id="saveButton2" value="3">
+                <p class="complete">save</p>
+            </button>
+        </div>
+        <div class="col hour4">
+            <div class="left">
+                <h3>1:00 pm</h3>
+            </div>
+            <textarea type="text" id="userInput4" class="middle"></textarea>
+            <button class="right" id="saveButton2" value="4">
+                <p class="complete">save</p>
+            </button>
+        </div>
+        <div class="col hour5">
+            <div class="left">
+                <h3>2:00 pm</h3>
+            </div>
+            <textarea type="text" id="userInput5" class="middle"></textarea>
+            <button class="right" id="saveButton2" value="5">
+                <p class="complete">save</p>
+            </button>
+        </div>
+        <div class="col hour6">
+            <div class="left">
+                <h3>3:00 pm</h3>
+            </div>
+            <input type="text" id="userInput6" class="middle"></input>
+            <button class="right" id="saveButton2" value="6">
+                <p class="complete">save</p>
+            </button>
+        </div>
+        <div class="col hour7">
+            <div class="left">
+                <h3>4:00 pm</h3>
+            </div>
+            <input type="text" id="userInput7" class="middle"></input>
+            <button class="right" id="saveButton2" value="7">
+                <p class="complete">save</p>
+            </button>
+        </div>
+        <div class="col hour8">
+            <div class="left">
+                <h3>5:00 pm</h3>
+            </div>
+            <input type="text" id="userInput8" class="middle"></input>
+            <button class="right" id="saveButton2" value="8">
+                <p class="complete">save</p>
+            </button>
+        </div>
 
 
+    </div>
 
-    <script src="./1_Assets/script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
