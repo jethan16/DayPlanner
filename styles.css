@@ -118,14 +118,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    outline: none;
 }
 
 .right:active {
     position: relative;
-    left: 2px;
+    left: 2px;pwd
+    
+    border-color: gray;
     border-left-style: solid;
-    border-left-color: darkgray;
+    border-left-color: lightgray;
     border-left-width: 3px;
+    /* border-right-color: black;` */
+    box-shadow: 2px 2px 5px grey;
 }
 
 .complete {
@@ -149,4 +154,9 @@
     background-color: rgba(33, 206, 70, 0.787);
     color: white;
     font-size: 15px;
+}
+
+textarea {
+    resize: none;
+    outline: none;
 }

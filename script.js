@@ -1,6 +1,7 @@
 var currentDate = new Date()
-var hour = new Date().getHours() - 12;
-// var hour = 5
+var hour = new Date().getHours();
+// var hour = 20   
+console.log(hour)
 
 $("#date").text(currentDate.toDateString())
 
@@ -23,17 +24,20 @@ for (var i = 0; i < 9; i++) {
     console.log(storage)
 }
 
-$("#userInput" + hour).addClass("present")
+// $("#userInput" + hour).addClass("present")
 
 for (var i = 0; i < 9; i++) {
     console.log("hour")
     if (i < hour) {
-        $("#userInput" + i).removeClass("")
+        // $("#userInput" + i).removeClass("")
         $("#userInput" + i).addClass("past")
-    }
-    if (i > hour) {
+    } else if (i > hour) {
         // $("#userInput" + i).removeClass("")
         $("#userInput" + i).addClass("future")
+    } else if (i === hour) {
+        // $("#userInput" + i).removeClass("")
+        $("#userInput" + i).addClass("present")
+
     }
 
 }
